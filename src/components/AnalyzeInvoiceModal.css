@@ -1,0 +1,74 @@
+.analyze-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.analyze-form__row {
+  display: flex;
+  gap: 16px;
+}
+
+.analyze-form__row .analyze-form__field {
+  flex: 1;
+}
+
+.analyze-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.analyze-form__field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.required {
+  color: #e5484d;
+}
+
+.analyze-form__field input[type='file'],
+.analyze-form__field input[type='date'] {
+  font: inherit;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.analyze-form__file-name {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.analyze-form__error {
+  font-size: 13px;
+  color: #e5484d;
+}
+
+.analyze-form__status {
+  margin: 0;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.analyze-form__status--success {
+  color: #2e9e5b;
+  background: rgba(46, 158, 91, 0.12);
+}
+
+.analyze-form__status--error {
+  color: #e5484d;
+  background: rgba(229, 72, 77, 0.12);
+}
+
+@media (max-width: 480px) {
+  .analyze-form__row {
+    flex-direction: column;
+  }
+}

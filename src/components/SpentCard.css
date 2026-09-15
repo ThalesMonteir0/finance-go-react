@@ -1,0 +1,32 @@
+.spent-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 24px 28px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  box-shadow: var(--shadow);
+}
+
+.spent-card__label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: var(--text);
+}
+
+.spent-card__value {
+  font-family: var(--heading);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  color: #e5484d;
+}
+
+@media (max-width: 640px) {
+  .spent-card__value {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,10 @@
+.pie-card {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px;
+  text-align: left;
+}
+
+.pie-card__title {
+  margin: 0 0 8px;
+}
